@@ -21,8 +21,8 @@ lazy val scalatraSettings = Seq(
   organization := "org.scalatra",
   Test / fork := true,
   Test / baseDirectory := (ThisBuild / baseDirectory).value,
-  crossScalaVersions := Seq("2.12.17", "2.13.10", "3.2.2"),
-  scalaVersion := crossScalaVersions.value.head,
+//  crossScalaVersions := Seq("2.12.17", "2.13.10", "3.2.2"),
+  scalaVersion := "2.13.10",
   Test / testOptions ++= {
     if (scalaBinaryVersion.value == "3") {
       Seq(
